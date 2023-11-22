@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!-- Alterar o Favicon >> Referências: Icon archieve, Favicon.io -->
+    <title>Exercício - HTML</title>
+</head>
+<body>
+    <h1>DESENVOLVIMENTO HTML</h1>
+    <hr> <!-- Linha horizontal -->
+    <h2>DEFINIÇÃO DE TEXTO</h2>
+    <h3>Texto inteiro</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illo perspiciatis quaerat praesentium dolorem adipisci ex, voluptatem repellat non saepe cupiditate, voluptatibus, dicta est iusto incidunt ducimus ipsum architecto quo?</p>
+
+    <h3>Quebra de linhas</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+    Quidem beatae ullam vero quisquam veniam veritatis, <br>
+    dignissimos iusto alias id incidunt voluptatem molestiae optio <br>
+    nostrum dolore perspiciatis aperiam explicabo ipsam? <br>
+    TAG: "&lt;br&gt;"</p>
+
+    <h2>SÍMBOLOS ESPECIAIS E EMOJIS</h2>
+    <p>&reg;&copy;&trade;&euro;&pound;&Delta;&uarr;</p>
+    <p>&#x1F596;&#x1F913;&#x1F93A;&#x1F349;&#x2622;&#xFE0F;</p>
+    <!-- Configuração: "&#x....." >> Fonte: Emojipedia.org-->   
+
+    <h2>IMAGENS</h2>
+    <h3>Imagem interna</h3>
+    <!-- Verificar direitos de uso - (sites como: Unsplash, Pexels, Freepik, Wikipedia Commons) -->
+    <img src="imagens/html5.png" alt="logo HTML5" width="200" height="250">
+
+    <h3>Imagem externa</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt="logo CSS3" width="200" height="250">
+
+    <h2>FORMATAÇÕES SEMÂNTICAS</h2>         
+    <h3>(Negrito / Destaque) ou (Itálico / Ênfase)</h3>
+    <p>Nesta frase, temos um termo em <b>Negrito</b>. (não-semântica)</p>
+    <p>Nesta frase, temos um termo com <strong>Destaque</strong>. (semântica)</p> <!-- RECOMENDAÇÃO W3C-->
+    <p>Nesta frase, temos um termo em <i>Itálico</i>. (não semântica)</p>
+    <p>Nesta frase, temos um termo com <em>Ênfase</em>. (semântica)</p> <!-- RECOMENDAÇÃO W3C-->
+
+    <h3>Texto Grande e Pequeno</h3>
+    <p>Nesta frase, estamos criando um <big>"texto grande"</big> e outro <small>"texto pequeno"</small>.</p>
+    <!-- A tag <big> tornou-se obsoleta, sendo o formato usual apenas via CSS3 -->
+
+    <h3>Texto Excluído / Inserido / Sublinhado</h3>
+    <p><del>Texto "excluído"</del>, devendo ser lido, porém desconsiderado. (semântica)</p>
+    <p><ins>Texto "inserido"</ins>, importante, porém adicionado posteriormente.(semântica)</p>
+    <p><u>Texto "sublinhado"</u>. (não semântica)</p>
+
+    <h3>Texto Sobrescrito e Subscrito</h3>
+    <p>Exemplo de Sobrescrito: Fórmula matemática de juros compostos M = C.(1+i)<sup>t</sup>.</p>
+    <p>Exemplo de Subscrito: Fórmula da molécula da água H<sub>2</sub>O.</p>
+
+    <h3>Marcador de texto</h3>
+    <p>Grifando textos <mark>cor padrão</mark>, ou ainda alterando a cor, <mark style="background-color: rgb(0, 255, 0);"> alternativo</mark>.</p>
+
+    <h3>Endereço</h3>
+    <p><address>Avenida da Liberdade, 257 - Lisboa, Portugal</address></p>
+
+    <h2>OUTRAS FORMATAÇÕES</h2>
+    <H3>Código-fonte</H3>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!--Fonte monoespaçada usada para descrever códigos-->
+    <p>Abaixo temos um exemplo de código em Python:</p>
+    <pre>
+        <code>
+        num = int(input('Digite um número'))
+        if: 
+            num % 2 == 0
+            print(f'0 número {num} é PAR)
+        else:
+            print(f'0 número {num} é ÍMPAR)
+            print('Fim do programa')
+        </code>
+    </pre> <!-- Gera um bloco do elemento selecionado, representando o mesmo na web conforme formatação no VSCode -->
+
+    <h3>Citações simples</h3>
+    <p>Como diria o pai de um amigo, <q>o computador é um burro muito rápido</q>. (semântica para citação - tag &lt;q&gt;)</p>
+
+    <h3>Citações completas</h3>
+    <p>Segundo Andy Harris, em seu livro "HTML, XHTML and CSS All-In-One For Dummies":</p>
+    <blockquote cite="https://www.google.pt/books/edition/HTML_XHTML_and_CSS_All_In_One_For_Dummie/-LdlRI0fT_UC?hl=en&gbpv=0">
+    Most of the problems people have with the Web are from misunderstandings about how this medium really works.
+    </blockquote> 
+    <!-- A tag "blockquote" irá permitir uma quebra de linha, além de um deslocamento horizontal, representando uma citação semântica -->
+    <!-- O parâmetro "cite" apenas mostrará aos mecanismos de buscas do navegador onde se encontra a citação apresentada.-->
+    
+    <h3>Abreviações</h3>
+    <p>Estamos estudando nesse bloco <abbr style="text-decoration-line: none;" title="HyperText Markup Language">HTML</abbr>, a seguir iremos desenvolver em paralelo <abbr style="text-decoration-line: none;" title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <h3>Texto invertido</h3>
+    <p><bdo dir="rtl">Este texto está escrito da esquerda para a direita.</bdo></p> <!-- rtl: right to left; ltr: letf to right; -->
+
+    <h2>TRABALHANDO COM LISTAS</h2>
+    <h3>Listas ordenadas</h3>
+    <ol type=""start="">
+        <li>Desenvolvimento HTML</li>
+        <li>Desenvolvimento CSS</li>
+        <li>Programação com JavaScript</li>
+        <li>Banco de Dados com SQL</li>
+        <li>Aplicações com Python</li>
+    </ol> 
+    <!-- Parâmetro Type, dentro de "ol", temos a possibilidade de alterar a listagem entre números cardinais (1;2;..), letras (A;B;a;b), algarismos romanos (I;II;i;ii). Parâmetro Start é possível iniciar o sequencial (númerico) definindo uma entrada predefinida (ex.: a partir do número 5, da letra "E" ou algarismo V (digitar 5)) -->
+    
+    <h3>Listas não ordenadas</h3>
+    <ul style="list-style-type: disc;">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+    <!-- Parâmetro Style, dentro de "ul", temos a possibilidade de alterar o marcador ou mesmo removê-lo. -->
+
+    <h3>Listas mistas - Usando Lista ordenada dentro de lista ordenada</h3>
+    <ol>
+        <li>Linguagens de programação antigas</li>
+        <ol type="1">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Linguagens de programação modernas</li>
+        <ol type="I">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h3>Listas mistas - Usando lista não ordenada dentro de lista não ordenada</h3>
+    <ul style="list-style-type: none;">
+        <li>Jogos de Super Nintendo</li>
+        <ul style="list-style-type: disc;">
+            <li>The Legend of Zelda: A Link to the Past</li>
+            <li>Super Mario World</li>
+            <li>Street Fighter</li>
+        </ul>
+        <li>Jogos de Playstation</li>
+        <ul style="list-style-type: circle;">
+            <li>Mortal Kombat</li>
+            <li>FIFA</li>
+            <li>Grand Theft Auto</li>
+        </ul>
+        <li>Jogos de Xbox</li>
+        <ul style="list-style-type: square;">
+            <li>Call of Duty</li>
+            <li>Diablo</li>
+            <li>Red Dead Redemption</li>
+        </ul>
+    </ul>
+    
+    <h3>Listas de definição</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</dd>
+        <dt>CSS</dt>
+        <dd>CSS (Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML. O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript (JS) é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (programação funcional).</dd>
+    </dl>
+    <!-- dl:"description list"; dt:"description term"; dd:"term in a description list". -->
+
+    <h2>LINKS E ÂNCORAS</h2>
+    <h3>Links Externos</h3>
+    <p>Você pode acessar a documentação oficial no <a href="https://www.w3schools.com" title="W3Schools.com" rel="external" >site da W3Schools</a>.</p>
+    <p>Ou ainda, através de outro canal oficial como o <a href="https://developer.mozilla.org/pt-BR/" title="Mozilla.org" target="_blank" rel="external">Mozilla.org</a></p>
+
+    <h3>Links Internos</h3>
+    <p>Vamos testar a possibilidade de navegar entre diferentes páginas desse documento HTML. <a href="link_interno.html" title="Acesso página link interno" rel="next">(CLIQUE AQUI)</a></p>
+    <p>Testando acesso sobre link interno a pasta. <a href="link_pasta/link_pasta.html" title="Acesso página link interno a pasta" rel="next">(CLIQUE AQUI)</a></p>
+
+    <h3>Links para download</h3>
+    <p>Para acessar um material em PDF elaborado pela Universidade do Porto. <a href="pdf/html.pdf" title="Download do arquivo" target="_blank" download="html.pdf">(CLIQUE AQUI)</a></p>
+
+    <h3>Link para endereço de Email</h3>
+    <p>Entre em contato via <a href="mailto:gustavosouzagilli@hotmail.com" title="Encaminhar email" >gustavosouzagilli@hotmail.com</a></p>
+
+    <h3>Link através de imagem</h3>
+    <p>Clique no emoji a seguir e será direcionado a outra página deste site. <a href="link-interno.html" title="Acesso via Emoji" rel="next">&#x1F680;</a></p>
+    <p>Obter mesmo encaminhamento clicando na imagem:
+    <a href="link-interno.html" title="Acesso via imagem" rel="next" >
+        <img src="imagens/html5.png" alt="Endereçando para link-interno" width="20" height="25">
+    </a></p>
+    
+    <h2>FORMATAÇÃO DE MÍDIAS</h2>
+    <h3>Imagens Dinâmicas</h3>
+    <p>Tente abrir em site em diferentes dispositivos, ou ainda, varie o tamanho da aba do seu navegador para visualizar o efeito sob as imagens.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fundo_pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fundo_medio.png" type="image/png">    
+        <img src="imagens/fundo_grande.png" alt="Imagem flexível">
+    </picture>
+    <!-- Sempre descrever o código em ordem crescente conforme acima. -->
+    
+    <h3>Reproduzindo áudio</h3>
+    <p>Vamos aprender a reproduzir áudios em sua página web.</p>
+    <audio controls>
+        <source src="midia/ruthless_neffex.mp3" type="audio/mp3">
+        Seu navegador não suporta o formato de execução do áudio. 
+    </audio>
+    <!-- É possivel adicionar o atributo loop a função audio. -->
+    <p>Se você tiver interesse em fazer o download do áudio. <a href="midia/ruthless-neffex.mp3" download="ruthless-neffex.mp3">ruthless - neffex.mp3</a></p>
+
+    <h3>Inserindo video hospedado localmente</h3>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    <video width="560" height="315" poster="imagens/poster_video.png" controls > 
+        <source src="midia/video_pexels.mp4" type="video/mp4" >
+        Seu navegador não suporta o formato de execução do video.
+    </video>
+    <!-- Adicione uma capa ao video, usando o atributo "poster". -->
+
+    <h3>Inserindo video do YouTube</h3>
+    <p>Este video está hospedado na plataforma do YouTube, ou seja, não consome dados da hospedagem do próprio site.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ijqjqwiNdV4?si=Vsdworx1IHM2OWUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3>Inserindo video do Vimeo</h3>
+    <p>Este outro caso, tem o mesmo propósito, sendo está uma plataforma também com videos particulares.</p>
+    <iframe width="560" height="315" src="https://player.vimeo.com/video/51821954?h=9027ddbcdd&title=0&byline=0&portrait=0"  
+    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+    allowfullscreen></iframe>
+</body>
+</html>

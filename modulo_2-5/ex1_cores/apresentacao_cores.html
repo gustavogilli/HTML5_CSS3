@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação de cores - CSS</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,#00BCE5,#45EAFF, #91FAF7);
+            background-attachment: fixed;  
+        }
+    </style>
+</head>
+<body>
+    <h1>PSICOLOGIA DAS CORES</h1>
+    <h2 style="background-color:blue; color:white;">Reprodução de cores por definição</h2>
+        <dl>
+            <dt>>> NOME:</dt>
+            <dd><code>style{background-color:blue;color:white;}</code></dd>
+            
+            <dt>>> CÓDIGO HEXADECIMAL:</dt>
+            <dd><code>style{background-color:#0000ff; color:#ffffff;}</code></dd>
+            
+            <dt>>> CÓDIGO RGB (RED, GREEN, BLUE):</dt>
+            <dd><code>style{background-color:rgb(0, 0, 255); color:rgb(255, 255, 255);}</code></dd>
+            
+            <dt>>> CÓDIGO HSL (HUE, SATURATION, LIGHTNESS):</dt>
+            <dd><code>style{background-color:hsl(240, 100%, 50%); color:hsl(0, 0%, 100%);}</code></dd>
+        </dl>          
+    <!-- Também é possível ajustar a transparência (ALPHA) da cor, alternando na barra secundária. -->
+    
+    <h2 style="background-color:blue; color:white;">Harmonia de cores</h2>
+        <p>Importante estudar sobre Psicologia das cores para definição de paletas e sua harmonização.</p>
+        <img style="border-style: solid;" src="imagens/circulo_cromatico_1.jpeg" alt="Círculo Cromático 1"><br>
+        <img style="border-style: solid;" src="imagens/circulo_cromatico_2.jpeg" alt="Círculo Cromático 2"><br>
+        <img style="border-style: solid;" src="imagens/circulo_cromatico_3.jpeg" alt="Círculo Cromático 3">
+    
+    <h2 style="background-color:blue; color:white;">Ferramentas auxiliares</h2>
+        <p>Segue abaixo recomendações de ferramentas para definição de paleta de cores:</p>
+        <ul>
+            <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">Adobe Colors</a></li>
+            <li><a href="https://paletton.com" target="_blank" rel="external">Paletton</a></li>
+            <li><a href="https://coolors.co/" target="_blank" rel="external">Coolors</a></li>
+        </ul>
+        <p>Vale destacar também que temos uma ferramenta poderosa para nos auxiliar no próprio navegador, por meio da extensão <q><strong>Colorzilla</strong></q>, que nos permite capturar a configuração de cores, gerando um código Hexadecimal, RGB ou HSL de uma página web, pdf, ou demais que estejam sendo apresentados na tela.</p>
+
+    <h2>Efeito gradiente</h2>
+        <p>A cor aplicada ao fundo da página principal está descrita no head, usando um parâmetro: <code>&lt;background-image: linear-gradient&gt</code>;;</p>
+        <p>É possível aplicar o gradiente também em casos isolados, conforme no exemplo abaixo:</p>
+    
+        <div style="background-image: linear-gradient(to right, #6523CB, #BB0D88, #EB0043, #F0602E, #F8CC63); width: 100%; height: 250px; display:flex; align-items: center; justify-content: center; border-style: solid;">
+            <p style="font-size: 50px; font-weight: bold;">GRADIENTE LINEAR</p>
+        </div>
+        <div style="background-image: radial-gradient(circle, #FAD612, #C7B136, #615C41); width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; border-style: solid">
+            <p style="font-size: 50px; font-weight: bold;">GRADIENTE RADIAL</p>
+        </div>
+
+    <h2>Criação de exemplo prático</h2>
+        <p>Aplicação dos conceitos do estudo acima, além da inclusão de novos parâmetros CSS. <a href="exercicio_aplicado.html" target="_self" rel="next">"Exercício aplicado - cores"</a></p>
+</body>
+</html>

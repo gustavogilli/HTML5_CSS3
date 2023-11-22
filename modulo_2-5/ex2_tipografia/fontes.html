@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definição de fontes</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        @font-face {font-family: 'Capture it'; src: url('fontes_download/capture_it.ttf'), format('truetype');}
+        @font-face {font-family: 'Gang of three'; src: url('fontes_download/gang_of_three.ttf'), format('truetype');}
+
+        /* Tipos de formato: opentype (.otf); truetype (.ttf); embedded-opentype (.eot); truetypee-aat (Apple Advanced Typography); .svg */
+
+        body{
+            background-image: linear-gradient(to right, #733816, #F2913D, #F2CEAE);
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-style: italic;
+            font-weight: normal;
+            font-size: 2.5em;
+            font-family: 'Fredericka the Great', serif;
+        }
+        h2{
+            font: italic bold 2em 'Dancing Script', 'cursive';
+            /* Formatação: "font: (1)font-style: -> (2)font-weight: -> (3)font-size: -> (4)font-family:" */
+        }
+        p{
+            text-align: justify;
+            text-indent: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESTUDO DAS FONTES - CSS </h1>
+    <h2>Fonte com sefira</h2>
+        <p style="font-family: serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolores nulla et natus eum fugiat quasi voluptatum beatae, quis nobis eligendi, deserunt illum? Nesciunt velit veritatis esse, totam placeat neque.</p>
+
+    <h2>Fonte sem serifa</h2>
+        <p style="font-family: sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur minima assumenda quaerat accusantium accusamus repellendus numquam amet quam iste velit, nam officiis eveniet quis deserunt hic ipsum sapiente aliquid?</p>
+
+    <h2>Fonte monoespaçada</h2>
+        <p style="font-family: monospace;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem, esse odio quia, ullam aut incidunt placeat sit neque reiciendis voluptates dicta iusto iure nihil distinctio. Animi maiores accusamus aliquid.</p>
+
+    <h2>Tamanho de fonte e definição oficial</h2>
+    <ul>
+        <li>Medidas absolutas</li>
+            <ul style="list-style-type: circle;">
+                <li>mm</li>
+                <li>cm</li>
+                <li>in</li>
+                <li>px (recomendado)</li>
+                <li>pt</li>
+                <li>pc</li>
+            </ul>
+        <li>Medidas relativas</li>
+            <ul style="list-style-type: circle;">
+                <li>em (recomendado)</li>
+                <li>ex</li>
+                <li>rem</li>
+                <li>vw</li>
+                <li>vh</li>
+                <li>%</li>
+            </ul>
+    </ul>
+        <p>OBS.: geralmente a fonte padrão tem 16px = 1em.</p>
+
+    <h2>Fontes externas</h2>
+        <p>Para aderir a uma fonte externa, é necessário definir alguns parâmetros, conforme exemplo abaixo:</p>
+        <pre>
+            <code>@font-face{font-family: ; src: url() format()}</code>
+        </pre>
+        <p>As fontes demonstradas a seguir, foram baixadas do site <a href="https://www.dafont.com/pt/" target="_blank" rel="external">DaFont.com</a>.</p>
+        <p style="margin: 0; font-weight: normal; font-size: 3em; font-family: Capture it, Times, Serif;"> EXEMPLO 1 - CAPTURE IT</p>
+        <p style="margin: 0; font-weight: normal; font-size: 3em; font-family: Gang of Three, Times, Serif;"> EXEMPLO 2 - GANG OF THREE</p>
+
+    <h2>Capturando fontes</h2>
+    <ul>
+        <li>Identificando fontes em websites</li>
+            <ul style="list-style-type: circle;">
+                <li>Extensão - Fonts Ninja</li>
+                <li>Extensão - Web Developer</li>
+            </ul>
+        <li>Identificando fontes em imagens</li>
+            <ul style="list-style-type: circle;">
+                <li><a href="https://www.whatfontis.com/" target="_blank" rel="external">Font Finder by What Font is</a></li>
+                <li><a href="https://www.fontsquirrel.com/" target="_blank" rel="external">Font Squirrel</a></li>
+                <li><a href="https://www.myfonts.com/" target="_blank" rel="external">MyFonts by monotype</a></li>
+            </ul>
+    </ul>
+</body>
+</html>

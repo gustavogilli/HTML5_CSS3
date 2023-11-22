@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor personalizado</title>
+    
+    <style>
+        /* ... id = (#); class = (.); inside = (>); pseudo-class = (:); pseudo-element = (::) ... */
+
+        @charset "UTF-8";
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        h1{
+            background-color: lightgreen;
+            color: darkgreen;
+            font-size: 2em;
+        }
+        h1#main_title{
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 2.5em;
+        }
+        h2{
+            color: darkolivegreen;
+            text-decoration: underline;
+            font-weight: normal;
+            font-size: 1.5em;
+        }
+        .sub1{
+            color: green;
+        }
+        .sub2{
+            color: red;
+        }
+        p{
+            text-align: justify;
+            text-indent: 1em;
+        }
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;  
+        }
+        a:hover{
+            color: red;
+            background-color: rgb(240, 175, 175);
+        }
+        a::after{
+            content: ' [link]';
+            color: grey;
+            font-weight: lighter;
+            font-size: 0.75em;
+        }
+        .hidden_effect{
+            font-weight: bold;
+        }
+        .hidden_effect > p{
+            display: none;
+        }
+        .hidden_effect:hover > p{
+            display: block;
+            background-color: red;
+            color: white;
+            width: 430px;
+        }
+        .stop, .attention, .go{
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            display: inline-block;
+            background-color: grey;
+            text-align: center;
+            font-weight: bold;
+        }
+        .stop:hover{
+            background-color: red;
+        }
+        .attention:hover{
+            background-color: yellow;
+        }
+        .go:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main_title">Personalização isolada de seletores</h1>
+    <h1>Título</h1>
+        <h2 class="sub1">Subtítulo 1.1</h2>
+            <p><span class="sub1">Lorem ipsum dolor</span>, sit amet consectetur adipisicing elit. Et quod eum aperiam eveniet eaque iste in obcaecati officia molestias dolores sequi harum sunt commodi, nisi, assumenda fugiat atque fuga repudiandae!</p>
+        
+        <h2 class="sub2">Subtítulo 1.2</h2>
+            <p><span class="sub2">Lorem ipsum dolor</span>, sit amet consectetur adipisicing elit. Et quod eum aperiam eveniet eaque iste in obcaecati officia molestias dolores sequi harum sunt commodi, nisi, assumenda fugiat atque fuga repudiandae!</p>
+    
+    <h1>Links - Hover</h1>
+        <p>Nesse exemplos abaixo, definimos fatores como pseudo-classes e pseudo-elementos.</p>
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="external">Youtube.com</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="external">W3Schools.com</a></li>
+            <li><a href="https://www.google.com/" target="_blank" rel="external">Google.com</a></li>
+        </ul>
+
+    <h1>Outros exemplos de Hover</h1>
+        <p>Passe o mouse sobre o texto abaixo:</p>
+        <div class="hidden_effect">
+        <mark>>>VEJA O EFEITO DO HOVER<<</mark>
+        <p>Parabéns, você está evoluindo no desenvolvimento.</p>
+        </div>
+
+        <p>Passe o mouse sobre os blocos abaixo, verás o efeito semáforo sobre os blocos.</p>
+        <div class="stop">STOP</div>
+        <div class="attention">ATTENTION</div>
+        <div class="go">GO</div>
+        
+</body>
+</html>

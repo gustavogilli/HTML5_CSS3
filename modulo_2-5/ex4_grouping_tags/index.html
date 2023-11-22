@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #393939, #6d6d6d, #999999);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            box-shadow: 3px 3px 5px black;
+        }
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
+        nav{
+            background-color: gray;
+            box-shadow: 3px 3px 5px black;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px 0px;
+            box-shadow: 3px 3px 5px black;
+        }
+        h2, p{
+            margin: 0px;
+        }
+        article > p{
+            text-align: justify;
+            text-indent: 20px;
+        }
+        aside{
+            text-align: right;
+        }
+        aside > span{
+            font-style: italic;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            box-shadow: 1px 1px 3px rgb(81, 81, 81);
+        }
+        span{
+            font-weight: bold;
+        }
+        header, main, footer{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UM EXEMPLO DE SITE</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi doloremque accusamus quos maxime, ab est neque ipsum provident amet laboriosam rerum sed cupiditate repellat veritatis totam explicabo voluptate, itaque adipisci!</p>
+                <aside>Elaborado por: <span>Gustavo Souza Gilli</span></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <span>Gustavo Gilli</span> &reg;</p>
+    </footer>
+</body>
+</html>
